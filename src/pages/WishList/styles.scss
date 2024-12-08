@@ -1,0 +1,41 @@
+.wish-list {
+  min-height: 80vh;
+
+  &__content {
+    @apply flex flex-wrap gap-[26px] mt-9 lg-md:mt-0;
+  }
+
+  &__item {
+    @apply bg-[#F5F3ED] py-[17px] px-[14px] rounded-[16px] w-[360px];
+
+    .info {
+      @apply flex;
+
+      svg {
+        fill: #eb0000;
+      }
+    }
+
+    .item-img {
+      margin-right: 18px;
+
+      img {
+        width: 83px;
+        height: 83px;
+        border-radius: 14px;
+      }
+    }
+
+    h2 {
+      @apply font-bold leading-4;
+    }
+
+    .price {
+      @apply font-bold;
+    }
+
+    button {
+      @apply bg-mainColor text-white w-full font-bold rounded-[7px] py-[7px] text-[18px] mt-[9px];
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.basket {
+  @apply bg-white rounded-[40px] pb-[35px] relative z-[1];
+
+  &__content {
+    @apply grid grid-cols-1 gap-[25px] sm:grid-cols-2 lg-md:grid-cols-3;
+  }
+
+  &__item {
+    @apply flex py-3.5 px-3 bg-[#F5F3ED] rounded-2xl;
+
+    &-img {
+      @apply mr-[17px] w-[20%];
+
+      img {
+        @apply rounded-2xl object-cover w-[80px] h-[83px];
+      }
+    }
+  }
+
+  &__info {
+    @apply flex flex-col justify-between w-[70%];
+
+    &-top {
+      @apply flex items-start;
+
+      h2 {
+        @apply font-bold text-[14px] leading-4 lg-md:text-[18px] laptop:max-w-[80%] line-clamp-2;
+      }
+
+      p {
+        @apply text-[12px] text-[#646464];
+      }
+    }
+
+    &-bottom {
+      @apply flex justify-between;
+
+      .price {
+        @apply font-bold text-[18px];
+      }
+    }
+
+    &-qnty {
+      @apply flex gap-[6px] items-center;
+
+      .qnty {
+        @apply font-bold text-[22px];
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__bottom {
+    @apply bg-mainColor rounded-[40px] px-[30px] pb-[35px] pt-[100px] -mt-[70px] laptop:bg-white;
+
+    &-content {
+      @apply flex justify-between items-center;
+    }
+
+    .total-sum {
+      @apply text-white leading-4 laptop:text-mainColor laptop:leading-8 laptop:text-[30px];
+
+      b {
+        display: block;
+      }
+    }
+
+    a {
+      @apply bg-white text-mainColor py-[10px] px-[26px] text-[22px] rounded-full font-bold laptop:text-white laptop:bg-mainColor laptop:px-[67px];
+    }
+  }
+}

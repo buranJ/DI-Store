@@ -1,0 +1,11 @@
+.follow-inst {
+    h2 {
+        font-size: 22px;
+        text-align: center;
+        font-weight: 700;
+
+        @media screen and (min-width: 426px) {
+            font-size: 30px;
+        }
+    }
+}

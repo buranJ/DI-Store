@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'variables';
+
+body {
+  font-family: $main-font;
+  @apply pb-[80px] lg-md:pb-0;
+}
+
+.swiper {
+  z-index: 0 !important;
+}

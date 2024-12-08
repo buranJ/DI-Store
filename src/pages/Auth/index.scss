@@ -1,0 +1,60 @@
+.auth {
+  @apply flex justify-center items-center font-medium h-screen lg-md:justify-between lg-md:h-auto;
+
+  &__img {
+    @apply hidden overflow-hidden h-screen w-[50%] lg-md:block;
+
+    img {
+      @apply max-w-full;
+    }
+  }
+
+  &__content {
+    @apply flex justify-center items-center lg-md:w-[50%];
+
+    h2 {
+      @apply text-[32px] font-bold mb-3 text-center;
+    }
+
+    p {
+      @apply mt-0 text-darkGray text-[15px] text-center;
+
+      span {
+        @apply text-[#4D81E7] cursor-pointer ml-1.5;
+      }
+    }
+
+    label {
+      @apply text-darkGray text-[15px];
+
+      span {
+        text-align: left;
+      }
+
+      input[type='text'],
+      input[type='password'] {
+        @apply block rounded-[10px] py-3 px-3.5 w-full border-[#EDF1F3] border-[1px] text-black font-medium;
+      }
+    }
+  }
+
+  &__forms-bottom {
+    @apply flex justify-between;
+
+    label {
+      @apply flex items-center;
+
+      span {
+        @apply text-darkGray text-[15px];
+      }
+    }
+
+    span {
+      @apply text-[#4D81E7] cursor-pointer ml-1.5;
+    }
+  }
+
+  button {
+    @apply mt-6 bg-mainColor text-white w-full py-3 rounded-[10px];
+  }
+}

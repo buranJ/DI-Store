@@ -1,0 +1,6 @@
+.nav {
+    @apply flex flex-col gap-2 lg-md:flex-row;
+    li {
+        @apply px-[30px] py-[7px] text-xl;
+    }
+}

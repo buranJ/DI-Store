@@ -1,0 +1,64 @@
+.mobile-search-container {
+  @apply fixed top-0 left-0 w-full h-screen z-50 p-8 bg-white overflow-y-scroll;
+
+  .mobile-search-input-group {
+    align-items: center;
+    position: relative;
+
+    .mobile-search-input {
+      border-radius: 9999px; // equivalent to rounded-full
+      height: 45px;
+      background-color: rgba(
+        245,
+        245,
+        220,
+        0.5
+      ); // equivalent to bg-[#f5f5dc80]
+      padding-right: 2.5rem; // equivalent to pr-10
+      @apply px-4;
+
+      &::placeholder {
+        color: #a0aec0; // equivalent to placeholder-gray-500
+      }
+    }
+
+    .mobile-search-icon {
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+
+      img {
+        width: 1.25rem; // 20px equivalent to w-5
+        height: 1.25rem; // 20px equivalent to h-5
+      }
+    }
+  }
+
+  .mobile-search-dropdown {
+    margin-top: 0.5rem; // equivalent to mt-2
+    width: 100%;
+    border-radius: 0.375rem; // equivalent to rounded-md
+    top: 2.5rem; // equivalent to top-10
+    left: 0;
+    z-index: 10; // ensures dropdown is above other elements
+
+    .mobile-search-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem; // equivalent to p-2
+      cursor: pointer;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .mobile-search-item-text {
+        font-size: 0.875rem; // equivalent to text-sm
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; // equivalent to line-clamp-1
+      }
+    }
+  }
+}

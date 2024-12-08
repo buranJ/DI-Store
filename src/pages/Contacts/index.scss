@@ -1,0 +1,21 @@
+.contacts {
+  &__top {
+    @apply border-2 border-mainColor rounded-3xl flex flex-wrap gap-[30px] py-[30px] px-[15px] box-border justify-center laptop:flex-row items-start;
+  }
+
+  &__item {
+    @apply text-center w-[40%] flex flex-col items-center justify-center laptop:w-[20%];
+
+    a {
+      @apply text-[14px] font-medium my-2 md:text-[22px];
+
+      &.address {
+        @apply text-[16px];
+      }
+    }
+
+    p {
+      @apply text-[10px] text-darkGray md:text-[16px];
+    }
+  }
+}

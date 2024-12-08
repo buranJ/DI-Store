@@ -1,0 +1,17 @@
+.masks-for-face {
+    @apply flex justify-center mt-20;
+
+    img {
+        @media screen and (min-width: 768px) {
+            max-width: 60%
+        }
+    }
+
+    &__swiper {
+        @apply text-center;
+    }
+
+    &__content a {
+        @apply flex justify-center items-center gap-3 font-bold text-[22px];
+    }
+}

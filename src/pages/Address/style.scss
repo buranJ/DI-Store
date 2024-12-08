@@ -1,0 +1,14 @@
+.address {
+  label {
+    @apply text-darkGray text-[15px];
+
+    span {
+      text-align: left;
+    }
+
+    input[type='text'],
+    input[type='password'] {
+      @apply block rounded-[10px] py-3 px-3.5 w-full border-[#EDF1F3] border-[1px] text-black font-medium;
+    }
+  }
+}

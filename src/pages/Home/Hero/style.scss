@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 200px;
+
+  &__logo {
+    img {
+      animation: rotate 5s linear infinite;
+      z-index: -1;
+      position: relative;
+    }
+  }
+
+  &__item img {
+    @apply w-[208px] h-[269px] rounded-[34px];
+  }
+
+  .mySwiper .swiper-slide:nth-child(2n) {
+    padding-top: 122px;
+  }
+
+  .mySwiper-mini {
+    margin: 20px;
+    width: 110px;
+
+    .swiper-slide {
+      width: 110px;
+      height: 80px;
+      border-radius: 27px;
+    }
+  }
+
+  .logo-1, .logo-2, .logo-3 {
+    position: absolute;
+  }
+
+  .logo {
+    &-1 {
+      right: 0;
+      top: -145px;
+    }
+
+    &-2 {
+      left: -100px;
+      top: 200px;
+    }
+
+    &-3 {
+      bottom: 0;
+      right: -100px;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

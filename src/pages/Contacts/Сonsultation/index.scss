@@ -1,0 +1,33 @@
+.consultation {
+  &__content {
+    @apply sm:flex justify-between gap-10 mb-5;
+  }
+
+  form {
+    @apply flex flex-col gap-4 bg-mainColor rounded-3xl px-4 py-8;
+  }
+
+  h2 {
+    @apply text-center font-bold text-xl leading-5 sm:text-3xl;
+  }
+
+  &__phone-input,
+  &__email-input,
+  &__name-input {
+    @apply py-2.5 px-5 rounded-full;
+  }
+
+  button {
+    @apply rounded-full bg-black text-white py-2.5 sm:text-2xl;
+  }
+
+  iframe {
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media screen and (min-width: 640px) {
+      width: 50%;
+    }
+  }
+}

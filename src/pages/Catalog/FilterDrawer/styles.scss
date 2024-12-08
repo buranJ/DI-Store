@@ -1,0 +1,8 @@
+.chakra-checkbox__control {
+  @apply border border-darkGray text-mainColor;
+  &[data-checked] {
+    background: transparent !important;
+    color: #ccd47c !important;
+    border-color: #ccd47c !important;
+  }
+}

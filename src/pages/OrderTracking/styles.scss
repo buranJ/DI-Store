@@ -1,0 +1,42 @@
+.order-tracking {
+  min-height: 80vh;
+
+  &__top {
+    @apply flex justify-evenly my-[30px];
+
+    .pill {
+      @apply w-[192px] rounded-full py-[5px] text-center text-[22px] text-darkGray font-medium cursor-pointer;
+
+      &.active {
+        @apply text-mainColor border-mainColor border-[2px];
+      }
+    }
+  }
+
+  .item {
+    &.desktop {
+      @apply hidden grid-cols-2 items-center text-[22px] bg-[#F5F3ED] p-[12px] rounded-[16px] mb-[25px] flex-wrap laptop:grid;
+    }
+
+    &.mobile {
+      @apply flex items-center text-[22px] bg-[#F5F3ED] p-[12px] rounded-[16px] mb-[25px] laptop:hidden;
+    }
+
+    img {
+        @apply w-[83px] h-[83px] rounded-[14px] object-cover laptop:w-[50px] laptop:h-[50px];
+    }
+
+    h2 {
+        @apply font-bold mx-[15px] flex-1;
+    }
+
+    .volume {
+        @apply text-[#646464] mx-[15px];
+    }
+
+    .quantity,
+    .price {
+        @apply font-bold mx-[15px];
+    }
+  }
+}
